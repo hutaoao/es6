@@ -3,13 +3,14 @@ var CONFIG = {
   document_title: "ECMAScript 6入门",
 
   // index page
-  index: "README.md",
+  // index: "README.md",
+  index: "docs/intro.md",
 
   // sidebar file
   sidebar_file: "sidebar.md",
 
   // where the docs are actually stored on github - so you can edit
-  base_url: "https://github.com/ruanyf/es6tutorial/edit/gh-pages",
+  base_url: "",
 };
 
 // **************************
