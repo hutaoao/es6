@@ -1,11 +1,6 @@
 # [ECMAScript 6 入门]()
 
-作者：[阮一峰](https://www.ruanyifeng.com)
-
-授权：<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">署名-非商用许可证</a>
-
 ## 目录
-1. [前言](#README)
 1. [ECMAScript 6简介](#docs/intro)
 1. [let 和 const 命令](#docs/let)
 1. [变量的解构赋值](#docs/destructuring)
@@ -38,8 +33,3 @@
 1. [最新提案](#docs/proposals)
 1. [Decorator](#docs/decorator)
 1. [参考链接](#docs/reference)
-
-## 其他
-- [源码](https://github.com/ruanyf/es6tutorial/)
-- [修订历史](https://github.com/ruanyf/es6tutorial/commits/gh-pages)
-- [反馈意见](https://github.com/ruanyf/es6tutorial/issues)

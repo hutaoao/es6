@@ -10,11 +10,11 @@ var ditto = {
 
     // display elements
     sidebar: true,
-    edit_button: true,
+    edit_button: false,
     back_to_top_button: true,
     theme_button: true,
     save_progress: true, // 保存阅读进度
-    search_bar: true,
+    search_bar: false,
 
     // initialize function
     run: initialize
@@ -44,7 +44,8 @@ var getHash = function (hash) {
   }
 };
 
-var disqusCode = '<h3>留言</h3><div id="disqus_thread"></div>';
+// var disqusCode = '<h3>留言</h3><div id="disqus_thread"></div>';
+var disqusCode = '';
 var menu = new Array();
 
 function initialize() {
@@ -60,7 +61,7 @@ function initialize() {
   if (ditto.edit_button) {
     init_edit_button();
   }
-    
+
   if (ditto.theme_button) {
         init_theme_button();
   }
@@ -356,7 +357,7 @@ function statistics() {
   s.parentNode.insertBefore(hm, s);
 }
 
-function router() { 
+function router() {
   var path = location.hash.replace(/#([^#]*)(#.*)?/, './$1');
 
   var hashArr = location.hash.split('#');
@@ -412,7 +413,7 @@ function router() {
       window.disqus_shortname = 'es6';
       window.disqus_identifier = (location.hash ? location.hash.replace("#", "") : 'READEME');
       window.disqus_title = $(ditto.content_id + " h1").text();
-      window.disqus_url = 'https://es6.ruanyifeng.com/' + (location.hash ? location.hash.replace("#", "") : 'README');
+      window.disqus_url = 'https://es6.ruanyifeng.com/' + (location.hash ? location.hash.replace("#", "") : 'docs/intro');
 
       // http://docs.disqus.com/developers/universal/
       (function() {
