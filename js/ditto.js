@@ -303,7 +303,7 @@ function create_page_anchors() {
         .addClass('content-toc')
         .attr('id', 'content-toc');
 
-      create_banner(ul_tag);
+      // create_banner(ul_tag);
 
       for (var j = 0; j < headers.length; j++) {
         var li_tag = $('<li></li>').html('<a href="#' + location.hash.split('#')[1] + '#' + headers[j] + '">' + headers[j] + '</a>');
